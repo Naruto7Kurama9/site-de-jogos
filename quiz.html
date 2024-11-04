@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <link rel="icon" href="icone.svg" sizes="any" type="image/svg+xml">
+
+</head>
+<body>
+    <div id="game">
+        <div id="tutorial">
+            <h1>Bem-vindo ao Quiz!</h1>
+            <p>Você tem 30 segundos para responder cada pergunta. Pontuação: +10 pontos para respostas corretas, -5 pontos para respostas erradas.</p>
+            <button id="startButton">Começar Quiz</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <div id="timer">Tempo restante: <span id="time">30</span> segundos</div>
+            <h1 id="question">Pergunta</h1>
+            <div id="options"></div>
+            <button id="next" class="hidden">Próxima Pergunta</button>
+        </div>
+        <div id="score" class="hidden">
+            <h1>Resultado</h1>
+            <p id="scoreMessage"></p>
+            <button id="playAgain">Jogar Novamente</button>
+            <button id="showLeaderboard">Ver Ranking</button>
+        </div>
+        <div id="leaderboard" class="hidden">
+            <h1>Ranking</h1>
+            <ul id="leaderboardList"></ul>
+            <button id="backToQuiz">Voltar ao Quiz</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6072650034109293"
+     crossorigin="anonymous"></script>
+</body>
+</html>

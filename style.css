@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background: rgb(2, 0, 36);
+background: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(13, 232, 230, 1) 35%,
+  rgba(0, 212, 255, 1) 100%
+);
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    overflow: hidden;
+    background-image: url('images/background.png'); /* Adicione um background se quiser */
+    background-size: cover;
+}
+
+#score, #timer {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button:hover{
+    color: white;
+}
+
+#single-player-btn{
+    border-radius: 20px;
+    background-color: gray;
+    
+}
+
+#multi-player-btn{
+    border-radius: 20px;
+    background-color: red;
+    
+}
+
+#online-multi-player-btn{
+    border-radius: 20px;
+    background-color: rgb(34, 12, 64, 0.6);
+}
+
+#mute-btn{
+    border-radius: 20px;
+    background-color: rgba(1, 119, 119, 0.979);
+}
+
+#player1, #player2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-size: cover;
+}
+
+#player1 {
+    background-image: url('https://pngimg.com/uploads/minions/minions_PNG12.png');
+}
+
+#player2 {
+    background-image: url('https://i.pinimg.com/474x/c2/69/2a/c2692ad105e0ba68804cbcc9536cf89e.jpg');
+}
+
+#goal {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+}
+
+.block {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+}
